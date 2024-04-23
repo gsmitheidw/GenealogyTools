@@ -10,7 +10,7 @@ named in sequence in the filename.
 ## Usage
 
 1. Run the gedmatch project, download the csv file using the "Download CSV" button
-2. Download this script and open it in "Powershell ISE" which is already preinstalled
+2. [Download this script](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Export-GedmatchProjectImages.ps1) and open it in "Powershell ISE" which is already preinstalled
 in windows.
 3. Press the green triangle play button. It will prompt you to choose the CSV file
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
