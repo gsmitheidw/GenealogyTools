@@ -6,10 +6,18 @@
 #  
 #  Note: Default csv files do not contain e-mail addresses so this will not filter
 #  them if Gedmatch changes its csv files. Please check the output images before
-#  uploading/sharing anywhere. 
+#  uploading/sharing anywhere. MRCA highlighting and sort order can be changed in
+#  the supplied .ini file.  
 # 
 #  Graham Smith, 2024
 #>
+
+if (Test-Path Export-GedmatchProjectImagesSettings.ini) {
+$optionsFile = Get-Content Export-GedmatchProjectImagesSettings.ini -ErrorAction Stop | Where-Object { $_ -notmatch '^\s*;' } | ConvertFrom-StringData
+} else {
+    Write-Host 'Configuration ".ini" file missing!'
+    exit
+}
 
 
 Add-Type -AssemblyName System.Windows.Forms
@@ -17,10 +25,10 @@ Add-Type -AssemblyName System.Windows.Forms
 # File selection dialog
 $openFileDialog = New-Object System.Windows.Forms.OpenFileDialog
 $openFileDialog.Filter = "CSV Files (*.csv)|*.csv|All Files (*.*)|*.*"
-$openFileDialog.InitialDirectory = [Environment]::GetFolderPath("Desktop")
+$openFileDialog.InitialDirectory = [Environment]::GetFolderPath('Desktop')
 $openFileDialog.Title = "Select CSV File"
 
-if ($openFileDialog.ShowDialog() -eq "OK") {
+if ($openFileDialog.ShowDialog() -eq 'OK') {
     $csvFilePath = $openFileDialog.FileName
 } else {
     Write-Host 'No file selected. Exiting script.'
@@ -32,7 +40,7 @@ if (-not (Test-Path $csvFilePath)) {
     exit
 }
 
-$csvData = Import-Csv -Path $csvFilePath | Select-Object -First 500 | Sort-Object -Property {$_.'Kit number'}
+$csvData = Import-Csv -Path $csvFilePath | Select-Object -First 500 | Sort-Object -Property {$_.($optionsFile.SortOrder)}
 
 # Define a function to truncate a string if it exceeds a certain length, names are too long in some cases
 # but we'll use a function because might need this again. 
@@ -49,7 +57,6 @@ function Truncate-String {
     }
 }
 
-# Define a function to convert each batch of rows into an image
 function Convert-BatchToImage {
     param(
         [array]$Rows,
@@ -58,8 +65,7 @@ function Convert-BatchToImage {
         [string]$LastKitNumber
     )
 
-    # Define font and sizing properties
-    $font = New-Object System.Drawing.Font("Courier New", 11)  
+    $font = New-Object System.Drawing.Font('Courier New', 11)  
     $rowHeight = 24  
     $headerHeight = 36  
     $columnWidth = 120  # These may need adjustments
@@ -76,35 +82,50 @@ function Convert-BatchToImage {
     $image = New-Object System.Drawing.Bitmap $imageWidth, $imageHeight
     $graphics = [System.Drawing.Graphics]::FromImage($image)
     $graphics.Clear([System.Drawing.Color]::White)  # background white
-    $brush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::Black) # black font
+    $blackBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::Black) 
+    $blueBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::LightBlue) 
+    $redBrush = New-Object System.Drawing.SolidBrush([System.Drawing.Color]::Red) 
     
     # Draw column headers
     $xPosition = 0
     foreach ($header in $Headers) {
         if ($header -eq "Name") {
-            $graphics.DrawString("$header", $font, $brush, $xPosition, 0)
+            $graphics.DrawString("$header", $font, $blackBrush, $xPosition, 0)
             $xPosition += $nameColumnWidth
         } else {
-            $graphics.DrawString("$header", $font, $brush, $xPosition, 0)
+            $graphics.DrawString("$header", $font, $blackBrush, $xPosition, 0)
             $xPosition += $columnWidth
         }
     }
 
     # Convert each row of the batch into text on the image
     $yPosition = $headerHeight
+    $isEvenRow = $false
     foreach ($row in $Rows) {
         $xPosition = 0
+
+        # Use conditional highlighting for easier reading
+        if ($isEvenRow) {
+            $graphics.FillRectangle($blueBrush, 0, $yPosition, $imageWidth, $rowHeight)
+        }
+
+        $isEvenRow = -not $isEvenRow  # Toggle the flag for the next row
         foreach ($header in $Headers) {
             if ($header -eq "Name") {
                 $value = Truncate-String -InputString $row.$header -MaxLength $maxNameLength
-                $graphics.DrawString("$value", $font, $brush, $xPosition, $yPosition)
+                $graphics.DrawString("$value", $font, $blackBrush, $xPosition, $yPosition)
                 $xPosition += $nameColumnWidth
             } else {
                 $value = $row.$header
-                $graphics.DrawString("$value", $font, $brush, $xPosition, $yPosition)
+                if ($header -eq "MRCA" -and $row.$header -lt $optionsFile.MRCA) {
+                    $graphics.DrawString("$value", $font, $redBrush, $xPosition, $yPosition)
+                } else {
+                    $graphics.DrawString("$value", $font, $blackBrush, $xPosition, $yPosition)
+                }
                 $xPosition += $columnWidth
             }
         }
+
         $yPosition += $rowHeight
     }
     

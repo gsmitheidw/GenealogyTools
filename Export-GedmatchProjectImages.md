@@ -15,9 +15,22 @@ named in sequence in the filename.
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
 the CSV file is in. 
 
+## Options
+
+Export-GedmatchProjectImagesSettings.ini is a plain text file which you can edit to change the sort order
+or the value by which the MRCA (Most Recent Common Ancestor) is highlighted in red text.
+Defaults settings are:
+
+    SortOrder=Kit number
+    MRCA=5
+
+Comments are preceded with a semi-colon.
+
 ## Notes
 
 Always spot check output files before posting. Gedmatch doesn't include e-mail addresses in the
 CSV file but this could change. 
+
+
 
 
