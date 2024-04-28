@@ -9,8 +9,6 @@ named in sequence in the filename.
 
 ## Usage
 
-https://github.com/gsmitheidw/GenealogyTools/releases
-
 
 1. Run the gedmatch project, download the csv file using the "Download CSV" button
 2. [Click here to go to Releases Page](https://github.com/gsmitheidw/GenealogyTools/releases)
