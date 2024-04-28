@@ -14,7 +14,7 @@ https://github.com/gsmitheidw/GenealogyTools/releases
 
 1. Run the gedmatch project, download the csv file using the "Download CSV" button
 2. [Click here to go to Releases Page](https://github.com/gsmitheidw/GenealogyTools/releases)
-and expand Assets and download Export-GedmatchProjectImages.zip
+and expand Assets and download **Export-GedmatchProjectImages.zip**
 
 3. Extract the contents to any folder. There should be three files.
 Then open **Export-GedmatchProjectImages.ps1** in "Powershell ISE" which is already preinstalled in windows. 
@@ -33,7 +33,7 @@ Defaults settings are:
     SortOrder=Kit number
     MRCA=5
 
-Comments are preceded with a semi-colon.
+Comments are preceded with a semi-colon. You can also set ```SortOrder=Name``` if you prefer.
 
 ## Notes
 
