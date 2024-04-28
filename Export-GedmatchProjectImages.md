@@ -11,7 +11,8 @@ named in sequence in the filename.
 
 1. Run the gedmatch project, download the csv file using the "Download CSV" button
 2. Right click [This script text](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Export-GedmatchProjectImages.ps1) and then right click and select "Save Link As". Then open it in "Powershell ISE" which is already preinstalled in windows. 
-3. Press the green triangle play button to start it running. It will prompt you to choose the CSV file
+3. Righ click [Export-GedmatchProjectImagesSettings.ini](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Export-GedmatchProjectImagesSettings.ini) and save it to the same folder.
+4. Press the green triangle play button to start it running. It will prompt you to choose the CSV file
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
 the CSV file is in. 
 
