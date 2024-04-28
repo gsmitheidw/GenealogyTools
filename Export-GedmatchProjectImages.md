@@ -26,6 +26,9 @@ You'll find it in the start menu. Of course powershell in command line or VS Cod
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
 the CSV file is in. 
 
+![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/images/ready-to-run.png?raw=true "Read to run")
+
+
 ## Options
 
 Export-GedmatchProjectImagesSettings.ini is a plain text file which you can edit to change the sort order
