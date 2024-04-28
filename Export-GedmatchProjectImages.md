@@ -28,6 +28,12 @@ the CSV file is in.
 
 ![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/images/ready-to-run.png?raw=true "Read to run")
 
+## Sample Output
+
+This is what you should expect to see in each file produced:
+
+
+![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/images/sample-output.png?raw=true "Sample Output") 
 
 ## Options
 
