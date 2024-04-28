@@ -9,9 +9,17 @@ named in sequence in the filename.
 
 ## Usage
 
+https://github.com/gsmitheidw/GenealogyTools/releases
+
+
 1. Run the gedmatch project, download the csv file using the "Download CSV" button
-2. Right click [This script text](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Export-GedmatchProjectImages.ps1) and then right click and select "Save Link As". Then open it in "Powershell ISE" which is already preinstalled in windows. 
-3. Righ click [Export-GedmatchProjectImagesSettings.ini](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Export-GedmatchProjectImagesSettings.ini) and save it to the same folder.
+2. [Click here to go to Releases Page](https://github.com/gsmitheidw/GenealogyTools/releases)
+and expand Assets and download Export-GedmatchProjectImages.zip
+
+3. Extract the contents to any folder. There should be three files.
+Then open **Export-GedmatchProjectImages.ps1** in "Powershell ISE" which is already preinstalled in windows. 
+You'll find it in the start menu. Of course powershell in command line or VS Code are also options.
+
 4. Press the green triangle play button to start it running. It will prompt you to choose the CSV file
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
 the CSV file is in. 
@@ -29,8 +37,8 @@ Comments are preceded with a semi-colon.
 
 ## Notes
 
-Always spot check output files before posting. Gedmatch doesn't include e-mail addresses in the
-CSV file but this could change. 
+:warning: Always spot check output files before posting on forums/facebook. 
+Gedmatch doesn't include e-mail addresses in the CSV file but this could change. 
 
 
 
