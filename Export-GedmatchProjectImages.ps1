@@ -12,13 +12,15 @@
 #  Graham Smith, 2024
 #>
 
-if (Test-Path Export-GedmatchProjectImagesSettings.ini) {
-$optionsFile = Get-Content Export-GedmatchProjectImagesSettings.ini -ErrorAction Stop | Where-Object { $_ -notmatch '^\s*;' } | ConvertFrom-StringData
+$scriptDirectory = $PSScriptRoot
+$iniFilePath = Join-Path -Path $scriptDirectory -ChildPath "Export-GedmatchProjectImagesSettings.ini"
+
+if (Test-Path $iniFilePath) {
+    $optionsFile = Get-Content $iniFilePath -ErrorAction Stop | Where-Object { $_ -notmatch '^\s*;' } | ConvertFrom-StringData
 } else {
-    Write-Host 'Configuration ".ini" file missing!'
+    Write-Host 'Failure - Configuration ".ini" file missing!' -ForegroundColor Red
     exit
 }
-
 
 Add-Type -AssemblyName System.Windows.Forms
 
