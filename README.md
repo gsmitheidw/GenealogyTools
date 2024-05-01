@@ -11,9 +11,9 @@ Tool to aid posting Gedmatch Project Results to Forums and Facebook Groups. Writ
 ### [Get-Triangulated-Kits.ps1](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Get-Triangulated-Kits.ps1)
 Look for triagulated segments in DNA matches from Gedmatch CSV files
 Note: This will not tell you if the overlap segments are paternal or maternal part of 
-each chromosome number! Use [DNAPainter.com](https://www.dnapainter.com) to build up a profile of known ancestor/match segments
+each chromosome number! Use [DNAPainter.com](https://www.dnapainter.com) to build up a profile of known ancestor/match segments.
 
-<br>
+
 Define your DNA segments in attached **test-segments.txt** file in the format:
 
 \<chromosome number\>,\<start segment\>,\<end segment\>
