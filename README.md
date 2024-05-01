@@ -6,6 +6,8 @@ Tools to aid Genealogy
 
 Tool to aid posting Gedmatch Project Results to Forums and Facebook Groups. Written in powershell to take a spreadsheet in CSV from Gedmatch and sort results and convert them into nicely formatted images with column headers and conditional highlighting and marking closer MRCA (most recent common ancestors) in red text.
 
+<hr>
+
 ### [Get-Triangulated-Kits.ps1](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Get-Triangulated-Kits.ps1)
 Look for triagulated segments in DNA matches from Gedmatch CSV files
 Note: This will not tell you if the overlap segments are paternal or maternal part of 
