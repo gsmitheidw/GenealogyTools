@@ -14,8 +14,7 @@ Note: This will not tell you if the overlap segments are paternal or maternal pa
 each chromosome number! Use [DNAPainter.com](https://www.dnapainter.com) to build up a profile of known ancestor/match segments
 
 <br>
-Define your DNA segments in attached ```test-segments.txt``` file
-in the format:
+Define your DNA segments in attached ```test-segments.txt``` file in the format:
 
 <chromosome number>,<start segment>,<end segment>
 
