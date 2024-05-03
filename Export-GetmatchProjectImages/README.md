@@ -18,13 +18,13 @@ and expand Assets and download **Export-GedmatchProjectImages.zip**
 Then open **Export-GedmatchProjectImages.ps1** in "Powershell ISE" which is already preinstalled in windows. 
 You'll find it in the start menu. Of course powershell in command line or VS Code are also options.
 
-![open ps1 file](https://github.com/gsmitheidw/GenealogyTools/blob/main/images/open-ps1.png?raw=true "Open ps1 file")
+![open ps1 file](https://github.com/gsmitheidw/GenealogyTools/blob/main/Export-GetmatchProjectImages/images/open-ps1.png?raw=true "Open ps1 file")
 
 4. Press the green triangle play button to start it running. It will prompt you to choose the CSV file
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
 the CSV file is in. 
 
-![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/images/ready-to-run.png?raw=true "Read to run")
+![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/Export-GetmatchProjectImages/images/ready-to-run.png?raw=true "Read to run")
 
 ## Sample Output
 
