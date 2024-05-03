@@ -1,6 +1,6 @@
 # Get-TriangulatedKits
 
-Get-TriangulatedKits is a Powershell script to look for triagulated segments in DNA matches from Gedmatch CSV files
+[Get-TriangulatedKits.ps1](https://raw.githubusercontent.com/gsmitheidw/GenealogyTools/main/Get-TriangulatedKits/Get-TriangulatedKits.ps1) is a Powershell script to look for triagulated segments in DNA matches from Gedmatch CSV files
 Use [DNAPainter.com](https://www.dnapainter.com) to build up a profile of known ancestor/match segments. Then take those Chromosome numbers with start and end segments to compare against matches. 
 
 
