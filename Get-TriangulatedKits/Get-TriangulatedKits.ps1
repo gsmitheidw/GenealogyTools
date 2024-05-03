@@ -4,9 +4,11 @@
 # Define your DNA segments in attached test-segments.txt file
 # in the format:
 # chromosome number,start segment,end segment
-# example:
+# example in attached file is this
 # 10,83416997,119963569
+# Please replace this with your own.
 # Add as many lines as you require that identify a known "match" on a specific line
+
 
 $scriptDirectory = $PSScriptRoot
 $segmentFilePath = Join-Path -Path $scriptDirectory -ChildPath "test-segments.txt"
