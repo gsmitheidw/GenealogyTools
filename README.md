@@ -10,6 +10,6 @@ Tool to aid posting [Gedmatch](https://www.gedmatch.com) Project Results to Foru
 
 ### [Get-TriangulatedKits](https://github.com/gsmitheidw/GenealogyTools/blob/main/Get-TriangulatedKits/README.md)
 
-Powershell script to look for triagulated segments in DNA matches from [Gedmatch](https://www.gedmatch.com) CSV files and output a list of people from a particular Gedmatch project results that match you on those chromosomes on those segments you're interested in.
+Powershell script to look for triangulated segments in DNA matches from [Gedmatch](https://www.gedmatch.com) CSV files and output a list of people from a particular Gedmatch project results that match you on those chromosomes on those segments you're interested in.
 
 
