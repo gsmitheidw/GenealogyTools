@@ -19,7 +19,9 @@ Powershell script to look for triangulated segments in DNA matches from [Gedmatc
 Script to login to Gedmatch to test a given kit against your own. Written in Python with Selenium. Requires Firefox.
 Also provided as a Windows binary. 
 
-### Security
+<hr>
+
+### Security (re: Powershell)
 
 Powershell may require you change [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4) before being able to run these scripts. If you get an error about this, run this line in Powershell first:
 
