@@ -12,6 +12,13 @@ Tool to aid posting [Gedmatch](https://www.gedmatch.com) Project Results to Foru
 
 Powershell script to look for triangulated segments in DNA matches from [Gedmatch](https://www.gedmatch.com) CSV files and output a list of people from a particular Gedmatch project results that match you on those chromosomes on those segments you're interested in.
 
+<hr>
+
+## [Test-MatchGedmatch](https://github.com/gsmitheidw/GenealogyTools/blob/main/Test-MatchGedmatch/README.md)
+
+Script to login to Gedmatch to test a given kit against your own. Written in Python with Selenium. Requires Firefox.
+Also provided as a Windows binary. 
+
 ### Security
 
 Powershell may require you change [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4) before being able to run these scripts. If you get an error about this, run this line in Powershell first:
