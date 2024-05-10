@@ -1,8 +1,9 @@
-# Test-MatchGedmatch
+# Test-MatchGedmatch $${\color{red}BETA}$$
 
 Simple utility that uses Selenium to log into Gedmatch and test if a kit matches yours and reports
 a match or not match. It (currently) does nothing more and will not show Chromosome/Segment data of
-a postive match. 
+a postive match. This is still in early active development, please do not rely on this yet.
+There may be incorrect results.
 
 
 ## Requirements
