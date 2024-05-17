@@ -31,7 +31,7 @@ the CSV file is in.
 This is what you should expect to see in each file produced:
 
 
-![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/images/sample-output.png?raw=true "Sample Output") 
+![Sample Output](https://github.com/gsmitheidw/GenealogyTools/blob/8e881f3e2a4340a35b5a6054b47f0df41e384df2/Export-GetmatchProjectImages/images/sample-output.png "Sample Output") 
 
 ## Options
 
