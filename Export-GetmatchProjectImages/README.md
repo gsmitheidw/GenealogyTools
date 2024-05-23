@@ -20,9 +20,19 @@ You'll find it in the start menu. Of course powershell in command line or VS Cod
 
 ![open ps1 file](https://github.com/gsmitheidw/GenealogyTools/blob/main/Export-GetmatchProjectImages/images/open-ps1.png?raw=true "Open ps1 file")
 
+
 4. Press the green triangle play button to start it running. It will prompt you to choose the CSV file
 downloaded from Gedmatch. Once you do that, it'll create image files in the same folder
-the CSV file is in. 
+the CSV file is in.
+
+
+
+Note: you may need to run:
+
+    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser 
+
+(in the blue panel window in Powershell ISE) and press enter to allow the script to run. 
+
 
 ![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/Export-GetmatchProjectImages/images/ready-to-run.png?raw=true "Read to run")
 
