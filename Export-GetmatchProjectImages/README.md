@@ -26,14 +26,6 @@ downloaded from Gedmatch. Once you do that, it'll create image files in the same
 the CSV file is in.
 
 
-
-Note: you may need to run:
-
-    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser 
-
-(in the blue panel window in Powershell ISE) and press enter to allow the script to run. 
-
-
 ![Read to Run](https://github.com/gsmitheidw/GenealogyTools/blob/main/Export-GetmatchProjectImages/images/ready-to-run.png?raw=true "Read to run")
 
 ## Sample Output
@@ -42,6 +34,15 @@ This is what you should expect to see in each file produced:
 
 
 ![Sample Output](https://github.com/gsmitheidw/GenealogyTools/blob/8e881f3e2a4340a35b5a6054b47f0df41e384df2/Export-GetmatchProjectImages/images/sample-output.png "Sample Output") 
+
+### Security note
+
+Note: you may need to run this command:
+
+    Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
+
+In the blue panel window in Powershell ISE and press Enter. This will allow the script to run within your user security context. By default Windows prevents random downloaded scripts from running for [security](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies). 
+
 
 ## Options
 
