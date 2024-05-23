@@ -14,7 +14,7 @@ Powershell script to look for triangulated segments in DNA matches from [Gedmatc
 
 <hr>
 
-## [Test-MatchGedmatch](https://github.com/gsmitheidw/GenealogyTools/blob/main/Test-MatchGedmatch/README.md)
+## [Test-MatchGedmatch](https://github.com/gsmitheidw/GenealogyTools/blob/main/Test-MatchGedmatch/README.md) 🟠Beta
 
 Script to login to Gedmatch to test a given kit against your own. Written in Python with Selenium. Requires Firefox.
 Also provided as a Windows binary. 
