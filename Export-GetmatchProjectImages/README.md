@@ -41,7 +41,7 @@ Note: you may need to run this command:
 
     Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope CurrentUser
 
-In the blue panel window in Powershell ISE and press Enter. This will allow the script to run within your user security context. By default Windows prevents random downloaded scripts from running for [security](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies). 
+In the blue panel window in Powershell ISE and press Enter then choose yes. This will allow the script to run within your user security context. By default Windows prevents random downloaded scripts from running for [security](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies). 
 
 
 ## Options
