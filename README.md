@@ -21,6 +21,10 @@ Also provided as a Windows binary.
 
 <hr>
 
+## [MakeMermaidTree](https://github.com/gsmitheidw/GenealogyTools/blob/main/MakeMermaidTree/README.md)
+
+Create tree structures using Mermaid-cli. This allows you create tree diagrams using only code that can be rendered to numerous formats or for embedding in Markdown files to becompiled into documentation using pandoc or equivalent. Requires npm (nodejs) and mermaid-cli both of which are cross platform.
+
 ### Security (re: Powershell)
 
 Powershell may require you change [Execution Policy](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.4) before being able to run these scripts. If you get an error about this, run this line in Powershell first:
