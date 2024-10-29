@@ -20,20 +20,19 @@ See this example for a basic tree structure
 
 
 ```
-
-%% Alice of Patrick Brien and Elizabeth Murray Ratoat
+%% Alice of Patrick Brien and Elizabeth Murray Ratoath
 flowchart TD
+    p["fa:fa-person Patrick Brien"]
+    e["fa:fa-person-dress Elizabeth Murray"]
+    A["fa:fa-person-dress Alice Brien<br>*(b.1822-d.1875)*"]
 
-p["Patrick Brien>"]
-e["Elizabeth Murray"]
-A["Alice Brien<br>*(b.1822-d.1875)*"]
+    p -- Father to --> A
+    e -- Mother to --> A
 
-p -- father to --> A
-e -- mother to --> A
 
 %% Freestanding text at the end of the chart
-text["Additional Notes: The Brien family history..."]
-style text fill:#d3d3d3, stroke:none, font-size:12px
+    text["Additional Notes: The Brien family history..."]
+    style text fill:#d3d3d3, stroke:none, font-size:12px
 
 ``` 
 
@@ -44,12 +43,13 @@ This is how this looks in png:
 
 
 
-## Mermaid Links
+## External Links
 
 https://github.com/mermaid-js/mermaid-cli
 
 
 https://mermaid.live/
 
-
+Font Awesome:<br>
+https://fontawesome.com/search
 
