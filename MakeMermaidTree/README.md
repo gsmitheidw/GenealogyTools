@@ -4,7 +4,8 @@
 
 1. Install npm (choco install nodejs)
 
-2. Install mermaid-cli using this line escalated: 
+2. Install mermaid-cli using this line escalated:
+ 
 
     npm install -g @mermaid-js/mermaid-cli
 
@@ -19,7 +20,8 @@
 See this example for a basic tree structure
 
 
-```
+```mermaid
+
 %% Alice of Patrick Brien and Elizabeth Murray Ratoath
 flowchart TD
     p["fa:fa-person Patrick Brien"]
