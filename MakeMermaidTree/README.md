@@ -59,7 +59,7 @@ flowchart TD
 
 %% Freestanding text at the end of the chart
     text["Additional Notes: The Brien family history..."]
-    style text fill:#d3d3d3, stroke:none, font-size:12px
+    style text fill:#000000, stroke:none, font-size:12px
 
 ``` 
 
